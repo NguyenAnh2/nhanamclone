@@ -1,0 +1,65 @@
+:root {
+    --primary-color: rgb(30, 255, 30);
+}
+
+.footer_wrapper {
+    display: flex;
+    justify-content: space-between;
+    padding: 60px 24px 0 24px;
+}
+.footer_info {
+    display: flex;
+    flex-flow: column;
+    width: 25%;
+}
+.footer_info_logo {
+    display: flex;
+    align-items: flex-end;
+}
+.footer_info_logo img {
+    margin-bottom: 3px;
+}
+.footer_info_slogan {
+    font-style: italic;
+    color: var(--primary-color);
+    font-size: 18px;
+    margin-left: 12px;
+}
+.footer_info_text {
+    display: flex;
+    align-items: center;
+    color: rgb(66, 66, 66);
+    line-height: 32px;
+    font-size: 18px;
+}
+.footer_info_text span {
+    font-size: 24px;
+    margin-right: 6px;
+    color: var(--primary-color);
+}
+.footer_info_addr, .footer_info_email, .footer_info_phone {
+    margin-top: 12px;
+}
+.footer_greet, .footer_policy, .footer_payment {
+    width: 25%;
+}
+.footer_greet ul, .footer_policy ul {
+    list-style: none;
+}
+.footer_item_title {
+    color: var(--primary-color);
+    font-size: 24px;
+    font-weight: bold;
+}
+.footer_item {
+    color: rgb(50, 50, 50);
+    font-size: 18px;
+    margin-top: 12px;
+    transition: 0.2s ease-in-out;
+}
+.footer_item:hover {
+    color: var(--primary-color);
+}
+.footer_payment {
+    margin-right: 0;
+}

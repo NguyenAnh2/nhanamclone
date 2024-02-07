@@ -1,0 +1,67 @@
+:root {
+    --primary-color: rgb(30, 255, 30);
+}
+.greeting_wrapper {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 60px 0;
+}
+.greeting_wrapper::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    background-color: var(--primary-color);
+    z-index: 1;
+    width: 100%;
+    height: 2px;
+}
+.greeting_text {
+    margin: 0 24px;
+    width: 50%;
+}
+.greeting_header {
+    color: var(--primary-color);
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 4px;
+}
+.greeting_slogan {
+    font-style: italic;
+    color: var(--primary-color);
+    font-size: 18px;
+    margin-bottom: 24px;
+}
+.greeting_description {
+    line-height: 24px;
+    font-size: 18px;
+    padding-right: 100px;
+    color: rgb(65, 65, 65);
+    margin-bottom: 32px;
+}
+.greeting_btn {
+    background-color: var(--primary-color);
+    padding: 12px 38px;
+    outline: none;
+    color: white;
+    font-size: 18px;
+    border: 1px solid transparent;
+    transition: 0.2s ease-in-out;
+    border-radius: 4px;
+    cursor: pointer;
+}
+.greeting_btn:hover {
+    background-color: white;
+    color: var(--primary-color);
+    border: 1px solid var(--primary-color);
+
+}
+.greeting_img {
+    width: 50%;
+    margin-right: 28px;
+}
+.greeting_img img{
+    object-fit: contain;
+}

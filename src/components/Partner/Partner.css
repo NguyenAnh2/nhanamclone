@@ -1,0 +1,103 @@
+:root {
+    --primary-color: rgb(30, 255, 30);
+}
+.partner_wrapper {
+    position: relative;
+    padding-bottom: 60px;
+}
+.partner_wrapper::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: var(--primary-color);
+}
+.partner_header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 24px;
+}
+.partner_header_title {
+    font-weight: bold;
+    font-size: 28px;
+    color: var(--primary-color);
+}
+.partner_header_more {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+.partner_header_more span {
+    position: absolute;
+    font-size: 24px;
+    color: var(--primary-color);
+    top: 50%;
+    right: 0;
+    line-height: 0;
+    transform: translateY(-50%);
+}
+.partner_header_more_show {
+    font-size: 18px;
+    color: var(--primary-color);
+    margin-right: 32px;
+}
+.partners_info {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+.partner_info {
+    margin-left: 24px;
+}
+.partner_info:not(.partner_info:nth-child(3)) {
+    margin-left: 60px;
+}
+.parner_info_img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 150px;
+    height: 150px;
+    border-radius: 150px;
+    margin-bottom: 24px;
+    background-color: rgb(190, 190, 190);
+    overflow: hidden;
+}
+.parner_info_img img {
+    width: 100%;
+}
+.partner_info_name {
+    text-align: center;
+    color: black;
+    font-size: 18px;
+    transition: 0.2s ease-in-out;
+}
+.partner_info_name:hover {
+    color: var(--primary-color);
+}
+
+.partner_arrow {
+    position: absolute;
+    width: 32px;
+    height: 32px;
+    font-size: 20px;
+    background-color: rgba(200, 200, 200, 0.5);
+    display: flex;
+    color: black;
+    transition: 0.2s ease-in-out;
+    justify-content: center;
+    align-items: center;
+}
+.arrow-back {
+    left: 12px;
+}
+.arrow-next {
+    right: 12px;
+}
+.partner_arrow:hover {
+    background-color: var(--primary-color);
+    color: white;
+}

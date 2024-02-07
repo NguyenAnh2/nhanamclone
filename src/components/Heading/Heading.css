@@ -1,0 +1,182 @@
+a { text-decoration: none; }
+.header_wrapper {
+    position: relative;
+    padding: 14px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.header_nav_link {
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    font-size: 20px;
+    font-weight: bold;
+    margin-right: 34px;
+    transition: 0.2s ease-in-out;
+}
+.header_more_books {
+    position: relative;
+}
+.header_more_books::after {
+    content: '';
+    position: absolute;
+    bottom: -100%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+.header_more_books .down_arrow, .header_more_books .up_arrow{
+    position: absolute;
+    display: block;
+    top: 10%;
+    right: -20px;
+}
+.header_more_books .up_arrow {
+    display: none;
+}
+.header_nav a:hover {
+    color: rgb(30, 255, 30);
+}
+.header_more_books:hover .down_arrow {
+    display: none;
+}
+.header_more_books:hover .up_arrow {
+    display: block;
+}
+.header_more_books_show {
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    padding: 24px;
+    top: 200%;
+    left: -200%;
+    width: 984px;
+    height: 476px;
+    border-radius: 12px;
+    background-color: rgb(250, 250, 250);
+    border: 1px solid rgba(190, 190, 190, 0.2);
+    z-index: 1;
+    cursor: unset;
+    display: none;
+}
+.show_col {
+    display: flex;
+    flex-direction: column;
+    width: 25%;
+    line-height: 32px;
+    position: relative;
+}
+.show_col:not(.show_col:last-child):after {
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: 2px;
+    background-color: rgba(145, 145, 145, 0.8);
+    top: 0;
+    right: 10px;
+}
+.title_col {
+    position: relative;
+    color: rgb(30, 255, 30);
+    font-size: 18px;
+}
+.header_mone_book_name {
+    color: black;
+    font-weight: 200;
+    font-size: 16px;
+    transition: 0.2s ease-in-out;
+}
+.title_col::after {
+    content: '';
+    line-height: 32x;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 34px;
+    height: 2px;
+    background-color: rgb(190, 190, 190);
+}
+.header_more_books:hover .header_more_books_show {
+    box-shadow: none;
+    display: flex;
+}
+.header_right {
+    display: flex;
+}
+.account_wrap {
+    display: flex;
+}
+
+/**/
+.header_right {
+    display: flex;
+    align-items: center;
+}
+.search_input {
+    position: relative;
+    margin-right: 12px;
+}
+.search_input input {
+    outline: none;
+    padding: 12px;
+    border-radius: 24px;
+    border: 1px solid black;
+}
+.search_icon {
+    position: absolute;
+    font-size: 24px;
+    font-weight: bold;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 12px;
+    --ionicon-stroke-width: 32px;
+}
+.account_wrap {
+    position: relative;
+}
+.account_info, .account_cart {
+    font-size: 24px;
+    color: black;
+}
+.account_cart {
+    margin-left: 8px;
+}
+.account_info {
+    position: relative;
+}
+.account_options {
+    position: absolute;
+    top: 100%;
+    right: 0%;
+    width: 120px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    border: 1px solid rgba(182, 182, 182, 0.1);
+    box-shadow: 1px 1px 2px;
+    transition: 0.2s ease-in-out;
+    z-index: 1;
+    padding: 6px 8px;
+    display: none;
+}
+.account_options a {
+    color: black;
+    font-size: 16px;
+    padding: 6px 0;
+}
+.account_options a:hover {
+    color: rgb(30, 255, 30);
+}
+.account_info:hover .account_options{
+    display: flex;
+}
+.header_wrapper::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background-color: rgb(30, 255, 30);
+    width: 100%;
+    height: 2px;
+}
